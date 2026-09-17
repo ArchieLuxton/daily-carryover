@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1390" height="454" viewBox="0 0 1390 454" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1390" height="470" viewBox="0 0 1390 470" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs>
-<rect width="1390" height="454" fill="#ffffff"/>
+<rect width="1390" height="470" fill="#ffffff"/>
 <text x="40" y="38" font-size="18" fill="#111827">Each daily note starts as a copy of the last one, then gets edited by hand</text>
-<rect x="40" y="80" width="250" height="284" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="40" y="80" width="250" height="300" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
 <rect x="40" y="80" width="250" height="30" rx="8" fill="#e5e7eb"/>
 <rect x="40" y="102" width="250" height="8" fill="#e5e7eb"/>
 <text x="52" y="100" font-size="13" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#111827" font-weight="600">2026-09-14.md</text>
@@ -16,7 +16,7 @@
 <text x="52" y="238" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
 <text x="52" y="257" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Ideas</text>
 <text x="52" y="276" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  try a smoothed profile?</text>
-<rect x="340" y="80" width="250" height="284" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="340" y="80" width="250" height="300" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
 <rect x="340" y="80" width="250" height="30" rx="8" fill="#e5e7eb"/>
 <rect x="340" y="102" width="250" height="8" fill="#e5e7eb"/>
 <text x="352" y="100" font-size="13" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#111827" font-weight="600">2026-09-15.md</text>
@@ -35,61 +35,60 @@
 <text x="352" y="295" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  compare with a simple</text>
 <rect x="346" y="301" width="238" height="18" rx="3" fill="#fef3c7"/>
 <text x="352" y="314" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  predictor first</text>
-<rect x="640" y="80" width="110" height="284" rx="8" fill="none" stroke="#9ca3af" stroke-dasharray="6 5"/>
-<text x="695.0" y="214.0" font-size="12" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#6b7280" text-anchor="middle">2026-09-16</text>
-<text x="695.0" y="234.0" font-size="13" fill="#6b7280" text-anchor="middle">Wed, no note</text>
-<rect x="800" y="80" width="250" height="284" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="640" y="80" width="110" height="300" rx="8" fill="none" stroke="#9ca3af" stroke-dasharray="6 5"/>
+<text x="695.0" y="222.0" font-size="12" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#6b7280" text-anchor="middle">2026-09-16</text>
+<text x="695.0" y="242.0" font-size="13" fill="#6b7280" text-anchor="middle">Wed, no note</text>
+<rect x="800" y="80" width="250" height="300" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
 <rect x="800" y="80" width="250" height="30" rx="8" fill="#e5e7eb"/>
 <rect x="800" y="102" width="250" height="8" fill="#e5e7eb"/>
 <text x="812" y="100" font-size="13" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#111827" font-weight="600">2026-09-17.md</text>
 <text x="1038" y="100" font-size="12" fill="#6b7280" text-anchor="end">Thu</text>
 <text x="812" y="124" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">## This week</text>
-<rect x="806" y="130" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="143" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- write-up: add figures, send</text>
-<text x="812" y="162" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
-<rect x="806" y="168" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="181" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Benchmark data arrived,</text>
+<text x="812" y="143" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- finish surrogate write-up</text>
+<rect x="806" y="149" width="238" height="18" rx="3" fill="#fef3c7"/>
+<text x="812" y="162" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">    figures done, send Friday</text>
+<text x="812" y="181" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
 <rect x="806" y="187" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="200" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">looks noisy</text>
-<text x="812" y="219" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
-<rect x="806" y="225" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="238" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">1. smoothed profile</text>
-<rect x="806" y="244" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="257" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">2. simple predictor</text>
-<rect x="806" y="263" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="276" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">3. compare the two</text>
-<text x="812" y="295" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
-<rect x="806" y="301" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="812" y="314" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">## Friday</text>
+<text x="812" y="200" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Dave sent the benchmark</text>
+<rect x="806" y="206" width="238" height="18" rx="3" fill="#fef3c7"/>
+<text x="812" y="219" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">data, looks noisy</text>
+<text x="812" y="238" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
+<text x="812" y="257" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Ideas</text>
+<text x="812" y="276" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  try a smoothed profile?</text>
+<text x="812" y="295" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  compare with a simple</text>
+<text x="812" y="314" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  predictor first</text>
 <rect x="806" y="320" width="238" height="18" rx="3" fill="#fef3c7"/>
 <text x="812" y="333" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- agenda for LBNL call</text>
-<rect x="1100" y="80" width="250" height="284" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="1100" y="80" width="250" height="300" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
 <rect x="1100" y="80" width="250" height="30" rx="8" fill="#e5e7eb"/>
 <rect x="1100" y="102" width="250" height="8" fill="#e5e7eb"/>
 <text x="1112" y="100" font-size="13" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#111827" font-weight="600">2026-09-18.md</text>
 <text x="1338" y="100" font-size="12" fill="#6b7280" text-anchor="end">Fri</text>
-<text x="1112" y="124" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Benchmark data arrived,</text>
+<text x="1112" y="124" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">## This week</text>
 <rect x="1106" y="130" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="1112" y="143" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">looks noisy. Ask Dave about</text>
-<rect x="1106" y="149" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="1112" y="162" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">the outliers before Monday</text>
-<text x="1112" y="181" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
+<text x="1112" y="143" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- send write-up</text>
+<text x="1112" y="162" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
+<text x="1112" y="181" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Dave sent the benchmark</text>
 <rect x="1106" y="187" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="1112" y="200" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">1. smoothed profile  (done)</text>
-<text x="1112" y="219" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">2. simple predictor</text>
-<text x="1112" y="238" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">3. compare the two</text>
-<text x="1112" y="257" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
-<text x="1112" y="276" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">## Friday</text>
-<text x="1112" y="295" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- agenda for LBNL call</text>
-<rect x="1106" y="301" width="238" height="18" rx="3" fill="#fef3c7"/>
-<text x="1112" y="314" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- send Tower 2 plots</text>
-<line x1="294" y1="222.0" x2="336" y2="222.0" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="315.0" y="214.0" font-size="11" fill="#6b7280" text-anchor="middle">copied</text>
-<path d="M594,222.0 C664,50 726,50 796,222.0" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1112" y="200" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">data, looks noisy. Ask him</text>
+<rect x="1106" y="206" width="238" height="18" rx="3" fill="#fef3c7"/>
+<text x="1112" y="219" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">about the outliers</text>
+<text x="1112" y="238" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve"></text>
+<text x="1112" y="257" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">Ideas</text>
+<rect x="1106" y="263" width="238" height="18" rx="3" fill="#fef3c7"/>
+<text x="1112" y="276" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  smoothed profile: done</text>
+<text x="1112" y="295" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  compare with a simple</text>
+<text x="1112" y="314" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">  predictor first</text>
+<text x="1112" y="333" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- agenda for LBNL call</text>
+<rect x="1106" y="339" width="238" height="18" rx="3" fill="#fef3c7"/>
+<text x="1112" y="352" font-size="12.5" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#1f2937" xml:space="preserve">- send Tower 2 plots</text>
+<line x1="294" y1="230.0" x2="336" y2="230.0" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="315.0" y="222.0" font-size="11" fill="#6b7280" text-anchor="middle">copied</text>
+<path d="M594,230.0 C664,50 726,50 796,230.0" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="695.0" y="66" font-size="11" fill="#6b7280" text-anchor="middle">copied from Tuesday</text>
-<line x1="1054" y1="222.0" x2="1096" y2="222.0" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="1075.0" y="214.0" font-size="11" fill="#6b7280" text-anchor="middle">copied</text>
-<rect x="40" y="392" width="22" height="14" rx="3" fill="#fef3c7" stroke="#d1d5db"/>
-<text x="70" y="404" font-size="13" fill="#374151">lines added or changed that day. Everything else arrived by being copied from the previous note.</text>
-<text x="40" y="430" font-size="13" fill="#374151">Headings, bullets, numbered lists and plain sentences all carry over as they are. Old notes are never modified.</text>
+<line x1="1054" y1="230.0" x2="1096" y2="230.0" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1075.0" y="222.0" font-size="11" fill="#6b7280" text-anchor="middle">copied</text>
+<rect x="40" y="408" width="22" height="14" rx="3" fill="#fef3c7" stroke="#d1d5db"/>
+<text x="70" y="420" font-size="13" fill="#374151">lines added or changed that day. Everything else arrived by being copied from the previous note.</text>
+<text x="40" y="446" font-size="13" fill="#374151">Headings, bullets, indented notes and plain sentences all carry over as they are. Old notes are never modified.</text>
 </svg>
