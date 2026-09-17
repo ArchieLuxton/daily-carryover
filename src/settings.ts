@@ -26,7 +26,7 @@ export class DailyCarryoverSettingTab extends PluginSettingTab {
 		const folder = config.folder === '' ? 'the vault root' : `"${config.folder}"`;
 		new Setting(containerEl)
 			.setName('Daily note location')
-			.setDesc(`Read from the core Daily notes plugin: notes in ${folder} named with the format "${config.format}".`);
+			.setDesc(`Taken from the core Daily notes plugin. Notes are in ${folder} and named with the format "${config.format}".`);
 
 		new Setting(containerEl)
 			.setName('Carry over automatically')

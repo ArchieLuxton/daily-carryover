@@ -1,55 +1,55 @@
 # Daily Carryover
 
-An Obsidian plugin that starts each new daily note as a verbatim copy of the most recent earlier daily note. Keep a freeform to-do list in your daily note, edit it through the day, and tomorrow's note begins exactly where today's ended. Every past note stays as it was, so the history of the list is preserved day by day.
+An Obsidian plugin that fills each new daily note with a copy of the previous daily note. I keep a freeform to-do list in my daily note and edit it during the day. The next morning the new note starts with the same text, and the old note is left alone, so I can read back through earlier days and see what the list looked like.
 
-There is no template and no parsing of tasks. Whatever the previous note contains, frontmatter included, is copied byte for byte.
+The plugin does not use a template and does not parse tasks. It copies the previous note as it is, including any frontmatter.
 
-## How it behaves
+## How it works
 
-When a daily note is created and is empty, the plugin finds the latest daily note dated before it and copies that note's content in. Weekends and gaps do not matter: the source is whichever earlier note exists, however old. A notice names the source note.
+When a daily note is created and is empty, the plugin looks for the most recent daily note with an earlier date and copies its content into the new note. If the last note was written on Friday and the new one is Monday, Friday's note is used. If you have not opened Obsidian for a month, the note from a month ago is used. A notice shows which note was copied.
 
-The plugin never overwrites. If the new note already has content, for example from a Daily notes template or because it arrived from another device via Sync, nothing happens.
+The plugin does not overwrite existing content. If the new note already contains something, for example text from a Daily notes template or a copy that arrived from another device through Sync, the plugin leaves it alone.
 
-"Previous" is relative to the created note's date, not to today. Creating a note for tomorrow carries over from today.
+The previous note is chosen relative to the new note's date rather than today's date. If you create a note for tomorrow, it is filled from today's note.
 
-Only files that sit in the daily note folder and whose names match the daily note date format exactly are treated as daily notes. Other files in the same folder are ignored.
+A file is treated as a daily note only if it is in the daily note folder and its filename matches the daily note date format exactly. Other files in the folder are ignored.
 
-The folder and date format are read from the core Daily notes plugin, so there is nothing to keep in step. If they cannot be read the plugin assumes the vault root and `YYYY-MM-DD`.
+The folder and date format are taken from the core Daily notes plugin settings. If those settings cannot be read, the plugin assumes the vault root and `YYYY-MM-DD`.
 
 ## Commands
 
-"Carry over from previous daily note" runs the same logic by hand. It targets the active file if that is a daily note, and otherwise today's note, creating it if needed. If the target already has content it refuses with a notice. Empty the note and run the command again to carry over. The same command sits behind the calendar icon in the left ribbon.
+"Carry over from previous daily note" runs the copy by hand. It works on the active file if that file is a daily note, and otherwise on today's note, creating it if necessary. If the target note already has content the command stops and shows a notice. To copy anyway, delete the content and run the command again. The calendar icon in the left ribbon runs the same command.
 
-"Open previous daily note" and "Open next daily note" step through the sequence of daily notes by date, skipping gaps. From inside a daily note they move relative to that note. From any other file they start from today, so "Open previous daily note" opens today's note if it exists and otherwise the most recent one before it.
+"Open previous daily note" and "Open next daily note" move to the nearest daily note before or after the current one, ignoring days with no note. If the active file is not a daily note, the search starts from today, so "Open previous daily note" opens today's note if there is one and otherwise the latest note before today.
 
-None of the commands have default hotkeys. Bind them under Settings, Hotkeys, by searching for "Daily Carryover". Binding the core "Open today's daily note" command as well gives a complete keyboard workflow.
+The commands have no default hotkeys. To add some, open Settings, Hotkeys and search for "Daily Carryover". You may also want a hotkey for the core "Open today's daily note" command.
 
-## Suggested Obsidian settings
+## Obsidian settings
 
-Under Settings, Core plugins, Daily notes:
+The relevant settings are under Settings, Core plugins, Daily notes.
 
-- "New file location" sets the folder and "Date format" sets the filename pattern. The plugin reads both, so change them here and nowhere else. The format may contain slashes to nest by year and month.
-- Leave "Template file location" empty. A template fills the new note before this plugin sees it, and the plugin never overwrites content.
-- Turn on "Open daily note on startup" if you want the day's note created and filled the moment Obsidian launches.
+- "New file location" is the daily note folder and "Date format" is the filename pattern. The plugin reads both from here. The format can contain slashes, such as `YYYY/MM/YYYY-MM-DD`, to put notes in nested folders.
+- Leave "Template file location" empty. A template puts content in the new note before this plugin runs, and the plugin will not overwrite it.
+- "Open daily note on startup" creates and fills today's note when Obsidian starts.
 
-## Settings
+## Plugin settings
 
-Two toggles, both on by default: carry over automatically on creation, and show a notice after an automatic carryover.
+There are two toggles, both on by default. One enables the automatic copy when a daily note is created. The other shows a notice naming the source note after an automatic copy.
 
-## Install into your vault
+## Installation
 
-The plugin is not in the community store. Build it and copy it into the vault.
+The plugin is not in the community plugin store. Build it and copy the files into your vault.
 
 ```
 npm install
 npm run deploy
 ```
 
-`npm run deploy` builds `main.js` and copies it, with `manifest.json`, into `.obsidian/plugins/daily-carryover/` in your vault. On macOS it finds the vault from Obsidian's own registry when there is exactly one; otherwise pass `--vault /path/to/vault` or set `OBSIDIAN_VAULT`.
+`npm run deploy` builds `main.js` and copies it and `manifest.json` into `.obsidian/plugins/daily-carryover/` inside the vault. On macOS the script reads the vault path from Obsidian's own vault list when there is only one vault. Otherwise pass `--vault /path/to/vault` or set the `OBSIDIAN_VAULT` environment variable.
 
-Then in Obsidian open Settings, Community plugins, and toggle on Daily Carryover under Installed plugins. Restricted mode must be off.
+In Obsidian, open Settings, Community plugins and enable Daily Carryover under Installed plugins. Restricted mode must be off.
 
-After changing the code, run `npm run deploy` again and then "Reload app without saving" from the command palette.
+After changing the code, run `npm run deploy` again, then run "Reload app without saving" from the command palette.
 
 ## Development
 
@@ -59,8 +59,14 @@ npm run build
 npm run dev
 ```
 
-`npm test` runs the vitest suite. The path and date logic lives in `src/dailyNotes.ts` and the carryover logic in `src/carryover.ts`; both are free of Obsidian imports and are tested against an in-memory vault. `src/main.ts` wires them to the Obsidian API and is tested against `src/test/obsidianStub.ts`, which the vitest config aliases in place of the `obsidian` package because that package ships only type declarations. `npm run dev` rebuilds on every change.
+`npm test` runs the vitest suite. `npm run dev` rebuilds whenever a source file changes.
 
-## Known limitations
+`src/dailyNotes.ts` contains the path and date logic and `src/carryover.ts` contains the copy logic. Neither imports from `obsidian`, and both are tested against an in-memory vault. `src/main.ts` connects them to the Obsidian API. Its tests use `src/test/obsidianStub.ts`, which the vitest config substitutes for the `obsidian` package because that package contains type declarations only.
 
-The plugin only acts while Obsidian is open, so a day you never open Obsidian gets no note. Two devices creating the same day's note at the same moment can produce a Sync conflict; in practice the first device to write wins and the second sees a non-empty note and stops. Reading the core Daily notes settings uses an internal Obsidian API that is undocumented but has been stable for years.
+## Limitations
+
+The plugin runs only while Obsidian is open. A day on which you never open Obsidian gets no note.
+
+If two devices create the same day's note at the same time, Sync may report a conflict. Usually the first device writes the copy, the second device then sees a note with content and does nothing.
+
+The core Daily notes settings are read through an internal Obsidian API. It is not documented, but it has not changed in several years.
