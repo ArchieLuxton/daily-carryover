@@ -4,6 +4,8 @@ An Obsidian plugin that fills each new daily note with a copy of the previous da
 
 The plugin does not use a template and does not parse tasks. It copies the previous note as it is, including any frontmatter.
 
+![Four daily notes across a week. Each one is created as a copy of the previous note and then edited. Wednesday has no note, so Thursday is copied from Tuesday.](docs/carryover.svg)
+
 ## How it works
 
 When a daily note is created and is empty, the plugin looks for the most recent daily note with an earlier date and copies its content into the new note. If the last note was written on Friday and the new one is Monday, Friday's note is used. If you have not opened Obsidian for a month, the note from a month ago is used. A notice shows which note was copied.
